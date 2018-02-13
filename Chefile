@@ -1,0 +1,21 @@
+# Runtime image to use for booting and compiling Eclipse Che
+workspace.runtime.docker.image="codenvy/debian_jdk8"
+
+# Commands that will appear on the IDE commands widget
+workspace.commands[0].name="1. Run"
+workspace.commands[0].commandLine='mvn tomcat7:run'
+workspace.commands[0].attributes={
+"previewUrl": "http://localhost:8080"
+}
+
+# Name of the workspace
+workspace.name="phoneshop"
+
+# Memory for this workspace
+workspace.ram=2000
+
+# Optional properties to propagate to che server (or export CHE_HOST_IP variable)
+#che.server.properties['CHE_HOST_IP']='123.123.123.123'
+
+# Configure project properties
+workspace.projects[0].type = "maven"
