@@ -1,5 +1,5 @@
 # Runtime image to use for booting and compiling Eclipse Che
-workspace.runtime.docker.image="codenvy/debian_jdk8"
+workspace.runtime.docker.image="codenvy/ubuntu_jdk8"
 
 # Commands that will appear on the IDE commands widget
 workspace.commands[0].name="1. Run"
